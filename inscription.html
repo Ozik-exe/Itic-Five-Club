@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inscription | ITIC Five Cup</title>
+  <link rel="stylesheet" href="/Itic-Five-Club/css/style.css">
+</head>
+
+
+<body>
+  <header class="header">
+    <img src="/Itic-Five-Club/assets/logo-itic-paris.webp" alt="ITIC Paris" class="logo">
+    <h1 class="title">Inscription</h1>
+    <p class="subtitle">Choisis ta promotion et ton mode de participation</p>
+  </header>
+
+
+    <main class="container">
+
+
+        <section id="section-promo" class="section">
+        <h2 class="section-title">Ta promotion</h2>
+
+
+            <div class="promo-buttons">
+                <button class="promo-btn" data-promo="BTS1">BTS 1</button>
+                <button class="promo-btn" data-promo="BTS2">BTS 2</button>
+            </div>
+        </section>
+
+
+        <section id="section-mode" class="section hidden">
+        <h2 class="section-title">Mode de participation</h2>
+
+
+            <div class="mode-buttons">
+                <button class="mode-btn" data-mode="solo">Je m’inscris en solo</button>
+                <button class="mode-btn" data-mode="team_member">Je rejoins une équipe</button>
+                <button class="mode-btn" data-mode="captain">Je crée mon équipe</button>
+            </div>
+        </section>
+
+
+        <section id="section-solo" class="section hidden">
+        <h2 class="section-title">Préinscription solo</h2>
+
+
+            <div class="promo-box">
+                <p>Promotion sélectionnée :</p>
+                <span id="promo-label" class="promo"></span>
+            </div>
+
+
+            <form id="student-form" class="form">
+
+
+                <label class="field">
+                Prénom
+                <input type="text" name="first_name" required>
+                </label>
+
+
+                <label class="field">
+                Nom
+                <input type="text" name="last_name" required>
+                </label>
+
+
+                <label class="field">
+                Classe (facultatif)
+                <input type="text" name="class_name">
+                </label>
+
+
+                <label class="field">
+                Niveau de jeu
+                <select name="skill_level">
+                    <option value="">Choisir…</option>
+                    <option value="loisir">Loisir</option>
+                    <option value="intermediaire">Intermédiaire</option>
+                    <option value="competition">Compétition</option>
+                </select>
+                </label>
+
+
+                <label class="field">
+                Contact (facultatif)
+                <input type="text" name="contact" placeholder="Email ou téléphone">
+                </label>
+
+
+                <label class="checkbox">
+                <input type="checkbox" name="privacy_consent" required>
+                J’accepte l’utilisation de mes données pour organiser le tournoi.
+                </label>
+
+
+                <button href="/Itic-Five-Club/confirmation.html" type="submit" class="btn">Valider ma préinscription</button>
+
+
+            </form>
+        </section>
+
+
+    </main>
+
+
+        <script src="/Itic-Five-Club/js/inscription.js"></script>
+
+
+</body>
+</html>
